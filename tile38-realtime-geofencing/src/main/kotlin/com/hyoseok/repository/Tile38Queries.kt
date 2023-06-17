@@ -1,6 +1,6 @@
 package com.hyoseok.repository
 
 object Tile38Queries {
-    fun pointQuery(coordinate: Tile38Coordinate) =
-        arrayOf("POINT", coordinate.latitude.toString(), coordinate.longitude.toString())
+    fun pointQuery(coordinate: Tile38Coordinate) = arrayOf("POINT", coordinate.latitude, coordinate.longitude)
+    fun limitQuery(limit: Int) = arrayOf("LIMIT", limit)
 }

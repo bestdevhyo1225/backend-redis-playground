@@ -17,3 +17,6 @@ logging:
       springframework:
         core:
           LocalVariableTableParameterNameDiscoverer: error
+#    io.lettuce.core:
+#      protocol:
+#        CommandHandler: debug

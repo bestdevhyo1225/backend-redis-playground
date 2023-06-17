@@ -1,5 +1,5 @@
 package com.hyoseok.repository
 
 object Tile38Keys {
-    const val FLEET = "FLEET"
+    const val FLEET = "fleet"
 }
