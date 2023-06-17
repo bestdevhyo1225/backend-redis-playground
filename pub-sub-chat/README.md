@@ -4,6 +4,20 @@
 
 - `Publish / Subscribe` 구조에서 사용되는 `Queue` 를 일반적으로 `Topic` 이라고 한다.
 
+## MessageListener
+
+```kotlin
+@Service
+class ChatService: MessageListener {
+    override fun onMessage(message: Message, pattern: ByteArray?) {
+        println("Message: $message")
+    }
+}
+```
+
+- `MessageListener` 인터페이스를 구현해야 한다.
+- 인터페이스 구현체인 `ChatService` 는 `RedisMessageListenerContainer` 를 통해 채널을 구독하고, 구독 해제할 수 있다.
+
 ## RedisMessageListenerContainer
 
 ```kotlin
