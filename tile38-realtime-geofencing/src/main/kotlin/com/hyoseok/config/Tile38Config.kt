@@ -6,7 +6,6 @@ import io.lettuce.core.RedisURI
 import io.lettuce.core.api.StatefulRedisConnection
 import io.lettuce.core.api.sync.RedisCommands
 import io.lettuce.core.codec.StringCodec
-import io.lettuce.core.pubsub.StatefulRedisPubSubConnection
 import io.lettuce.core.pubsub.api.sync.RedisPubSubCommands
 import io.lettuce.core.support.ConnectionPoolSupport
 import org.apache.commons.pool2.impl.GenericObjectPool
