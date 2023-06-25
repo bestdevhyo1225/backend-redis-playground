@@ -40,10 +40,7 @@ class Tile38Config(
 
     @Bean
     fun tile38StatefulRedisConnectionPool(): GenericObjectPool<StatefulRedisConnection<String, String>> =
-        ConnectionPoolSupport.createGenericObjectPool(
-            { tile38RedisClient().connect() },
-            getGenericObjectPoolConfig()
-        )
+        ConnectionPoolSupport.createGenericObjectPool({ tile38RedisClient().connect() }, getGenericObjectPoolConfig())
 
     private fun getGenericObjectPoolConfig(): GenericObjectPoolConfig<StatefulRedisConnection<String, String>> {
         val genericObjectPoolConfig = GenericObjectPoolConfig<StatefulRedisConnection<String, String>>()
