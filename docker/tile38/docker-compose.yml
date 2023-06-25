@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  backend-tile38-playground:
+  tile38:
     image: tile38/tile38
-    container_name: backend-tile38-playground
+    container_name: tile38
     ports:
       - '9851:9851'
     restart: unless-stopped
